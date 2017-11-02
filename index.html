@@ -56,25 +56,23 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-    <main role="main" >
 	<div ng-view></div>
    
-    </main><!-- /.container -->
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script><!-- Optional theme -->
-
 	<link rel="stylesheet" href="/css/custom.css">
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+	<script src="ngtweet.min.js"></script>
 
 	<script>
-	var app=angular.module("myApp",["ngRoute"]);
+	var app=angular.module("myApp",["ngRoute","ngtweet"]);
 	app.config(function($routeProvider){
 		$routeProvider.
 		when("/",{templateUrl:"partials/main.html"}).

@@ -27,61 +27,39 @@
 
   </div>
   <div class="container">
-<div class="row">
-	<div class="col-md-9">
-	<div class="marquee" id="mycrawler2">
+	<div class="row">
 
-  <img src="http://www.rawandale.com/images/SlideShow/1.JPG" width="181" height="120" />
+		<div class="col-md-7 "  class="pre-scrollable">
+			<twitter-timeline style="max-height:100px;">
+				<a class="twitter-timeline" data-theme="light" data-height="400" href="https://twitter.com/s_rawandale?ref_src=twsrc%5Etfw">Tweets by s_rawandale </a>
+			<twitter-timeline>
 
-  <img src="http://www.rawandale.com/images/SlideShow/2.JPG" width="180" height="120" />
+		</div>
+		<div class="col-md-3">
+			<div id= "myCaroussel" class = "carousel"> 
+				<ol class = "carousel-indicators">
+					<li data-target = "myCaroussel" data-slide-to = "0" class = "active"> </li>
+					<li data-target = "myCaroussel" data-slide-to = "1"> </li>
+					<li data-target = "myCaroussel" data-slide-to = "2"> </li>
+				</ol>
+				<div class= "carousel-inner">
+					<div class = "item ">
+						<img src="http://www.rawandale.com/images/SlideShow/1.JPG" width="181" height="120" />
+					</div> 
 
-  <img src="http://www.rawandale.com/images/SlideShow/3.JPG" width="160" height="120" />
+					<div class = "item ">
+						<img src="http://www.rawandale.com/images/SlideShow/2.JPG" width="181" height="120" />
+					</div>  
 
-  <img src="http://www.rawandale.com/images/SlideShow/4.JPG" width="160" height="120" />
+					<div class = "item active ">
+						<img src="http://www.rawandale.com/images/SlideShow/3.JPG" width="181" height="120" />
+					</div>           
+				</div>  
 
-  <img src="http://www.rawandale.com/images/SlideShow/5.JPG" width="160" height="120" />
+			</div>
+		</div>
+	
 
-  <img src="http://www.rawandale.com/images/SlideShow/6.JPG" width="160" height="120" />
 
-  <img src="http://www.rawandale.com/images/SlideShow/7.JPG" width="160" height="120" />
-
-</div>
 	</div>
-	<div class="col-md-3 pre-scrollable">
-		<a class="twitter-timeline" href="https://twitter.com/s_rawandale?ref_src=twsrc%5Etfw">Tweets by s_rawandale</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 	</div>
-</div>
-</div>
-	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-<script type="text/javascript" src="scripts/crawler.js"></script>
-<script type="text/javascript">
-
-marqueeInit({
-
-	uniqueid: 'mycrawler2',
-
-	style: {
-
-		'padding': '2px',
-
-		'width': '765px',
-
-		'height': '120px'
-
-	},
-
-	inc: 5, //speed - pixel increment for each iteration of this marquee's movement
-
-	mouse: 'cursor driven', //mouseover behavior ('pause' 'cursor driven' or false)
-
-	moveatleast: 2,
-
-	neutral: 150,
-
-	savedirection: true,
-
-	random: true
-
-});
-
-</script>
